@@ -1,0 +1,9 @@
+listen_addr: ":9001"
+backend: "localhost:8080"
+log_level: "error"
+host_replacements:
+  - from: "foo-bar\\.example\\.com"
+    to: "foo.example.com"
+sni_replacements:
+  - from: "foo-bar\\.example\\.com"
+    to: "foo.example.com"
